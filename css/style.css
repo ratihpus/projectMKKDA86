@@ -17,7 +17,7 @@ h3 {
 
 
 nav {
-	background-color: #00a2c6;
+	background-color: #a832a8;
 	padding: 5px;
 	position: sticky;
 	top: 0;
@@ -52,7 +52,7 @@ main {
 .jumbotron {
 	font-size: 20px;
 	text-align: center;
-	background-color: #00c8eb;
+	background-color: #a83287;
 	padding: 20px;
 	color: #fff;
 }
@@ -99,7 +99,7 @@ aside {
 footer {
    padding: 10px;
    color: white;
-   background-color: #00a2c6;
+   background-color: #a83287;
    text-align: center;
    font-weight: bold;
 }
