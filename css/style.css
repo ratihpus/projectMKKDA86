@@ -1,0 +1,165 @@
+
+
+/* digunakan untuk memanggil jenis font secara online*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+
+/* memanggil isi dari tag body */
+body {
+	/* digunakan untuk mengubah jenis font*/
+   font-family: 'Quicksand';
+   /* margin digunakan untuk memberi jarak luar dan
+   padding digunakan untuk memberi jarak dalam */
+   margin: 0;
+   padding: 0;
+}
+
+/* memanggil tag h2 */
+h2 {
+	/* digunakan untuk mengubah warna text */
+   color: #00a2c6;
+}
+ 
+h3 {
+   color: #00a2c6;
+}
+
+
+/* memanggil isi dari tag nav */
+nav {
+	/* digunakan mengubah warna background */
+	background-color: #00a2c6;
+	padding: 5px;
+	/* digunakan agar posisi tetap diatas ketika di scroll */
+	position: sticky;
+	/* memberikan nilai atas 0 */
+	top: 0;
+}
+
+/* memanggil nilai dari tag nav didalamnya terdapat tag a */
+nav a{
+	/* mengubah ukuran font */
+	font-size: 18px;
+	/* menghapus style text yg terdapat garis bawah   */
+	text-decoration: none;
+	color: #fff;
+}
+
+/* memanggil tag nav yg didalamnya terdapat tag a, dan fungsi hover yaitu ketika cursor di arahkan pada elemen */
+nav a:hover{
+	/* mengubah ketebalan font  */
+	font-weight: bold;
+}
+
+/* memanggil tag nav yg didalamnya terdapat tag li */
+nav li {
+	/* mengubah elemen block menjadi inline*/
+	display: inline;
+	/* mengatur jarak luar kanan*/
+	margin-right: 20px;
+
+}
+
+/* memanggil tag header */
+header {
+	display: inline;
+}
+
+/* memanggil tag main */
+main {
+	padding: 25px;
+ 	/* menampung nilai float dan tdk membuat elemen baru */
+	overflow: auto;
+}
+
+
+/* memanggil sebuah CLASS di html pada css diawali dengan titik
+memanggil sebuah ID di html pada css diawali dengan pagar */
+
+/* memanggil class bernama jumbotron */
+.jumbotron {
+	font-size: 20px;
+	/* mengatur text agar ketengah*/
+	text-align: center;
+	background-color: #00c8eb;
+	padding: 20px;
+	color: #fff;
+}
+
+/* memanggil class bernama profile yg didalamnya terdapat tag header */
+.profile header {
+	text-align: center;
+}
+
+/* memanggil class bernama profile yg didalamnya terdapat tag img */
+.profile img {
+	/* mengatur lebar pada suatu gambar */
+	width: 200px;
+}
+
+/* memanggil class bernama gambar */
+.gambar {
+	width: 100%;
+	/* mengatur maksimal tinggi pada suatu gambar */
+	max-height: 400px;
+	/* mengatur object gambar agar tetap fit seperti cover */
+	object-fit: cover;
+	/* object gambar akan berposisi ditengah */
+	object-position: center;
+}
+
+
+/* memanggil class bernama card */
+.card {
+	/* mengatur nilai bayangan pada object, 
+	nilai 1 adalah sumbu x, nilai 2 adalah sumbu y, nilai 3 adalah nilai keburaman,
+	nilai 4 adalah sumbu tingkat keburaman, nilai 5 adalah warna */
+	box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+	/* membuat setip sudut object agar melengkung  */
+	border-radius: 5px;
+	padding: 30px;
+	/* mengatur jarak luar atas */
+	margin-top: 20px;
+}
+
+/* memanggil class bernama card */
+.content {
+	/* membuat sebuah elemen berada di kiri */
+	float: left;
+	width: 75%;
+}
+
+
+/* memanggil tag aside */
+aside {
+	/* membuat sebuah elemen berada di kanan */
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+	/* membuat ukuran elemen box menajadi tetap pada kontennya */
+	box-sizing: border-box;
+	/* membuat posisi elemen menjadi tetap/default */
+	position: static;
+	top: 40px;
+}
+
+
+/* memanggil tag aside */
+footer {
+   padding: 10px;
+   color: white;
+   background-color: #00a2c6;
+   text-align: center;
+   font-weight: bold;
+}
+
+/* berfungsi ketika ukuran halaman web resize yang maksimal bernilai 1000px, nilai ini dapat dirubah sesuai yang dibutuhkan */
+@media screen and (max-width: 1000px) {
+	/* memanggil class bernama content dan aside */
+   .content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
+
